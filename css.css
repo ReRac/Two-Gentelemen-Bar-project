@@ -36,7 +36,10 @@ a {
 }
 
 .logo {
-  margin: 0 0 0 16px;
+  width: 350px;
+  height: 200px;
+  margin-right: 1em;
+  object-fit: fill;
 }
 
 .logo,
@@ -47,22 +50,24 @@ a {
 .logo a,
 .nav a {
   text-decoration: none;
+  list-style: none;
 }
+
 .nav {
   display: flex;
+  margin: 1em 0 0.5em;
+  text-align: center;
 }
 
 .nav a {
-  display: block;
-  padding: 8px;
-  color: #000000;
+  display: inline-block;
+  padding: 0.5em 1.5em;
 }
 
 .nav a:hover {
   background: #00ace6;
 }
-/* added media */
-
+/* ****** ****** */
 @media all and (max-width: 990px) {
   .flex-container {
     flex-direction: column;
@@ -78,25 +83,30 @@ a {
   }
 }
 
+li {
+  display: inline;
+}
+
 /* ****** ****** */
+/*
 @media all and (max-width: 600px) {
   .logo {
     margin: 0.25em 0;
-    align-self: left; /* align the logo to the left side of 'flex-container' */
+    align-self: left;
   }
 
-  .navigation {
+  .nav {
     flex-direction: column;
   }
 
-  .navigation a {
+  .nav a {
     text-align: center;
     padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #edf886;
+    border-bottom: 1px solid #edf886;
   }
 
-  .navigation li:last-of-type a {
+  .nav li:last-of-type a {
     border-bottom: none;
   }
-}
+} */
