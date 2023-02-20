@@ -1,112 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
-* {
-  padding: 0;
-  margin: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
-    "Times New Roman", Times, serif, sans-serif;
-  font-weight: bold;
+body,
+html {
+  font-family: "Montserrat", serif, sans-serif, "Times New Roman";
+  margin: 0;
+  font-weight: 800;
+  background: #edf886;
 }
 
-ul {
-  list-style-type: none;
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-  color: #000000;
-}
+/*Nav */
 
-a {
-  list-style-type: none;
-}
-
-.nav-bar {
+#nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 24px;
+  padding: 12px 6vh;
   background: #edf886;
 }
 
 .logo {
-  width: 350px;
-  height: 200px;
-  margin-right: 1em;
-  object-fit: fill;
+  margin-right: auto;
+  max-width: 500px;
+  width: 100%;
+  cursor: default;
 }
 
-.logo,
-.nav {
-  list-style-: none;
-}
-
-.logo a,
-.nav a {
-  text-decoration: none;
-  list-style: none;
-}
-
-.nav {
+.menu li {
   display: flex;
-  margin: 1em 0 0.5em;
-  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  list-style: none;
+  width:100%;
 }
 
-.nav a {
-  display: inline-block;
-  padding: 0.5em 1.5em;
+.menu a {
+  display: flex;
+  text-decoration: none;
+  padding: 16px;
+  transition: 0.1s ease-in-out;
+  font-size: 25px;
+  color: #2e3102ce;
 }
 
-.nav a:hover {
-  background: #00ace6;
-}
-/* ****** ****** */
-@media all and (max-width: 990px) {
-  .flex-container {
-    flex-direction: column;
-  }
-
-  .logo {
-    margin: 0;
-  }
-
-  .nav {
-    width: 100%;
-    justify-content: space-around;
-  }
+.menu a:hover {
+  color: #da7706bb;
 }
 
-li {
-  display: inline;
+
+
+/* Hero /*
+.her
+
+
+
+/* DESKTOP - LAPTOP - TABLET */
+@media screen and (min-width: 850px) {
+  #nav-bar .small-screens {
+    display: none;
+  }
 }
 
-/* ****** ****** */
-/*
-@media all and (max-width: 600px) {
-  .logo {
-    margin: 0.25em 0;
-    align-self: left;
+/* MOBILE */
+
+@media screen and (max-width: 850px) {
+  #nav-bar {
+    padding: 1rem 5vw;
   }
 
-  .nav {
-    flex-direction: column;
+  #nav-bar .small-screens i {
+    font-size: 25px;
+    cursor: pointer;
   }
 
-  .nav a {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #edf886;
-    border-bottom: 1px solid #edf886;
+  #nav-bar .big-screens {
+    display: none;
   }
-
-  .nav li:last-of-type a {
-    border-bottom: none;
-  }
-} */
+}
+*/
+/* MEDIA QUERIES ENDS*/
