@@ -4,7 +4,7 @@
 *{
   box-sizing: border-box;
   padding: 0px;
-  margin: ;
+  margin: 0;
 }
 
 body,
@@ -88,12 +88,16 @@ list-style-type: none;
       border-top: 1px solid #000000ce; 
     }
 
-    .list {
+    .menu {
       list-style-type: none;
       width: 100%;
       text-align: center;
       padding: 10px;
+      display: none;
+    }
 
+    .active {
+      display: block;
     }
   
 
@@ -138,9 +142,9 @@ position: relative;
 .hero-text button:hover {
   background-color: transparent;
   color:  #edf886;;
-  border: 2px solid #f55b89bb;;);
+  border: 2px solid #f55b89bb;
   text-shadow: 1px 1px #000;
-  max-width: 10mw:;
+  max-width: 10mw;
 }
 /*
 @media screen and (max-width: 480px) {
@@ -157,4 +161,4 @@ position: relative;
     display: none;
   }
 }
-/*
+*/
