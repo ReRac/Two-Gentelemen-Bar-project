@@ -73,29 +73,31 @@ list-style-type: none;
       flex-direction: column;
       }
 
-    .phone-menu-item {
+      #nav-bar .logo {
+        width: 100%;
+      }
+
+    .phone-menu {
       display:block;
       position: absolute;
-      right: 50px;
-      top: 50px;
+      right: 15px;
+      top: 15px;
     } 
     .menu .list {
       display: block;
-      align-items: center;
-      list-style: none;
-      padding: 20px 10px;
-      border: 2px solid #000000ce; 
-      border-radius: 15px;
-    
+      border-top: 1px solid #000000ce; 
     }
-    .menu {
+
+    .list {
       list-style-type: none;
       width: 100%;
       text-align: center;
-      padding: 3px;
-    }
+      padding: 10px;
 
-  }
+    }
+  
+
+  
 
 
 
