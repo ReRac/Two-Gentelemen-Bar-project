@@ -88,53 +88,77 @@ html {
     list-style-type: none;
     width: 100%;
     text-align: center;
+    padding: 10px;
     display: none;
   }
 
   .active {
     display: block;
   }
-
-  /* Hero  */
-
-  #hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-background {
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-style: rgb(87, 32, 32);
-  }
-
-  .hero-text h1 {
-    font-weight: bold;
-    margin: 10px;
-    text-shadow: 2px 2px #000;
-    color: #f55b89bb;
-  }
-
-  .hero-text button:hover {
-    background-color: transparent;
-    color: #edf886;
-    border: 2px solid #f55b89bb;
-    text-shadow: 1px 1px #000;
-    max-width: 10mw;
-  }
 }
+/* Hero  */
+
+#hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f54009d7;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.heading-primary {
+  display: block;
+  letter-spacing: 7px;
+  font-weight: 500;
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.heading-sub {
+  display: block;
+  letter-spacing: 8px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 20px #f54009d7;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px #f54009d7;
+}
+
+.btn-yellow {
+  background-color: #edf886;
+  color: #000000ce;
+  font-size: 14px;
+}
+
 /*
 @media screen and (max-width: 480px) {
   #nav-bar {
