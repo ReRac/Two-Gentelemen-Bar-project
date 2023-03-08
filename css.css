@@ -99,7 +99,7 @@ html {
 /* Hero  */
 
 #hero {
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -115,6 +115,7 @@ html {
   color: #f54009d7;
   font-weight: bold;
   margin: 10px;
+  max-width: 100%;
 }
 
 .heading-primary {
@@ -160,26 +161,33 @@ html {
 }
 /*Content*/
 
-.content {
+#content {
   height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-position: bottom;
   position: relative;
 }
 
 .content-text {
-  display: block;
+  display: inline-block;
   letter-spacing: 3px;
   font-weight: 500;
   font-size: 18px;
-  padding-bottom: 10px;
+  padding: 20px;
   text-align: center;
-  border-style: 2px solid #000000ce;
-  padding: 22px;
 }
 
-#map {
+.contentPicture {
+  max-width: 100%;
+  height: auto;
+}
+
+. #map {
   height: 400px; /* The height is 400 pixels */
   width: 100%; /* The width is the width of the web page */
 }
+
 /*
 @media screen and (max-width: 480px) {
   #nav-bar {
